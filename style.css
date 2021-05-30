@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+/* ========= CARD =========== */
+
+
+section{
+    background:  hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card{
+    width: 350px;
+    border-radius: 20px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+
+}
+
+
+/* =======================  CARD -- HEADER ====================== */
+
+
+.card-header{
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+
+.img-holder{
+    margin: -50px auto 10px auto;
+}
+
+.img-holder img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+
+/* ======================== CARD -- BODY ======================== */
+
+
+.card-body h2{
+padding: 0px 20px;
+}
+.age{
+    font-size: 23px;
+    font-weight: 400;
+    color: gray;
+    padding-left: 10px;
+}
+
+.city{
+    color: gray;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+/* ========================= CARD -- FOOTER ====================== */
+
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 0px 45px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(185, 179, 179);
+}
+
+.item h4{
+    font-size: 1.1rem;
+}
+
+.item h5{
+    padding: 5px 0px;
+    color: gray;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* ====================== CIRCLE ==================== */
+
+
+.circle .c1,
+.circle .c2
+{
+    width: 800px;
+    position: absolute;
+
+}
+
+.circle .c1{
+    top: -350px;
+    left: -120px;
+}
+
+.circle .c2{
+    bottom: -420px;
+    right: -90px;
+}
+
+
+
+/* ========================= MOBILE DESIGN =========================== */
+
+@media screen and (max-width: 1450px){
+
+.circle .c1,
+.circle .c2
+{
+    width: 700px;
+    position: absolute;
+
+}
+
+.circle .c1{
+    top: -350px;
+    left: -120px;
+}
+
+.circle .c2{
+    bottom: -420px;
+    right: -90px;
+}
+}
+
+@media screen and (max-width: 1120px){
+.circle .c1,
+.circle .c2
+{
+    width: 600px;
+    position: absolute;
+
+}
+
+.circle .c1{
+    top: -350px;
+    left: -120px;
+}
+
+.circle .c2{
+    bottom: -420px;
+    right: -90px;
+}
+
+}
+
+@media screen and (max-width: 720px){
+.circle .c1,
+.circle .c2
+{
+    width: 500px;
+    position: absolute;
+
+}
+
+.circle .c1{
+    top: -320px;
+    left: -250px;
+}
+
+.circle .c2{
+    bottom: -300px;
+    right: -300px;
+}
+
+}
+
+
